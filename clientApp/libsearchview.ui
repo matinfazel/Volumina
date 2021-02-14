@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LibSearchView</class>
+ <widget class="QDialog" name="LibSearchView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1052</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Search for a Book</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="img.qrc">
+    <normaloff>:/src/src/0b85636ca6384399edbae4cc3d344937.png</normaloff>:/src/src/0b85636ca6384399edbae4cc3d344937.png</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QComboBox" name="options_combo_box">
+         <item>
+          <property name="text">
+           <string>ISBN</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Title</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Subject</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="search_line_edit">
+         <property name="inputMask">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="search_button">
+         <property name="text">
+          <string>Search</string>
+         </property>
+         <property name="icon">
+          <iconset resource="img.qrc">
+           <normaloff>:/src/src/search.png</normaloff>:/src/src/search.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="result_table">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>0</number>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="dragDropOverwriteMode">
+        <bool>false</bool>
+       </property>
+       <property name="showGrid">
+        <bool>false</bool>
+       </property>
+       <property name="gridStyle">
+        <enum>Qt::SolidLine</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <property name="cornerButtonEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="rowCount">
+        <number>0</number>
+       </property>
+       <property name="columnCount">
+        <number>9</number>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>ISBN</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Title</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Publication</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Author</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Translator</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Edition</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Subject</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Language</string>
+        </property>
+       </column>
+       <column/>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="4" column="1" colspan="2">
+      <widget class="QLineEdit" name="translator_line_edit"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_author">
+       <property name="text">
+        <string>Author</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1" colspan="2">
+      <widget class="QLineEdit" name="language_line_edit"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_language">
+       <property name="text">
+        <string>Language</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" colspan="2">
+      <widget class="QLineEdit" name="edition_line_edit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_title">
+       <property name="text">
+        <string>Title</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QPushButton" name="close_button">
+       <property name="text">
+        <string>Close</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>src/cancel.png</normaloff>src/cancel.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_publisher">
+       <property name="text">
+        <string>Publisher</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QLineEdit" name="isbn_line_edit">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" colspan="2">
+      <widget class="QLineEdit" name="author_line_edit"/>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QLineEdit" name="title_line_edit"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_subject">
+       <property name="text">
+        <string>Subject</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_translator">
+       <property name="text">
+        <string>Translator</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1" colspan="2">
+      <widget class="QLineEdit" name="subject_line_edit"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QPushButton" name="create_item_button">
+       <property name="text">
+        <string>add a book item</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>src/add.png</normaloff>src/add.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_edition">
+       <property name="text">
+        <string>Edition</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1" colspan="2">
+      <widget class="QLineEdit" name="publisher_line_edit"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_isbn">
+       <property name="text">
+        <string>ISBN</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>options_combo_box</tabstop>
+  <tabstop>search_line_edit</tabstop>
+  <tabstop>search_button</tabstop>
+  <tabstop>isbn_line_edit</tabstop>
+  <tabstop>title_line_edit</tabstop>
+  <tabstop>edition_line_edit</tabstop>
+  <tabstop>author_line_edit</tabstop>
+  <tabstop>translator_line_edit</tabstop>
+  <tabstop>publisher_line_edit</tabstop>
+  <tabstop>language_line_edit</tabstop>
+  <tabstop>subject_line_edit</tabstop>
+  <tabstop>create_item_button</tabstop>
+  <tabstop>close_button</tabstop>
+  <tabstop>result_table</tabstop>
+ </tabstops>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

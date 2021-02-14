@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/src">
+        <file>src/0b85636ca6384399edbae4cc3d344937.png</file>
+        <file>src/8f67e404cad80b0862148f6482cc6970.jpg</file>
+        <file>src/add (1).png</file>
+		<file>src/add-book.png</file>
+		<file>src/add-admin.png</file>
+		<file>src/information.png</file>
+        <file>src/add.png</file>
+        <file>src/add-user.png</file>
+        <file>src/book.png</file>
+        <file>src/borrow-icon-5.jpg</file>
+        <file>src/browser.png</file>
+        <file>src/cancel.png</file>
+        <file>src/credit-card.png</file>
+        <file>src/credit-card-payment.png</file>
+        <file>src/edit.png</file>
+        <file>src/ee02ae9a2c8c9fcafe4e7e61586d986f.png</file>
+        <file>src/eraser.png</file>
+        <file>src/exit.png</file>
+        <file>src/f2f58574bab69904590471d4c18a8bc0.jpg</file>
+        <file>src/iconfinder_help_326654.png</file>
+        <file>src/iconfinder_search_322497.png</file>
+        <file>src/login.png</file>
+        <file>src/plus.png</file>
+        <file>src/refresh-button.png</file>
+        <file>src/replace.png</file>
+        <file>src/return.png</file>
+        <file>src/search.png</file>
+        <file>src/world-wide-web.png</file>
+        <file>src/683b5ecbaf5bb893ed1b10cffd392106.jpg</file>
+        <file>src/954fc3e5f4a257ea4cc5fe59fa054437.jpg</file>
+    </qresource>
+</RCC>
