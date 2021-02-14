@@ -16,6 +16,5 @@ Set ip to 127.0.0.1 to connect to server
 ```bash
 Qt Creator 4.12.2
 
-
 DB browser (SQLite)
 ```
